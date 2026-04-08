@@ -1,0 +1,26 @@
+baseURL = 'https://rocopierre.github.io/'
+languageCode = 'ko-kr'
+title = 'Rocopierre의 귀엽고 이쁜 그림 갤러리' # 브라우저 탭에 뜨는 이름
+theme = 'PaperMod'
+
+[params]
+  env = 'production'
+  title = 'Rocopierre Draw Log' # 메인 화면에 크게 뜨는 이름
+  description = '잼잼잼 그림 기록'
+  author = 'Rocopierre'
+
+[[menu.main]]
+  name = "Gallery"
+  url = "/gallery"
+  weight = 30
+
+[params.profileMode]
+  enabled = true
+  title = 'Rocopierre 만세!👋'
+  subtitle = 'Rocopierre의 개인 갤러리입니다.'
+  imageUrl = '/images/sakura.jpg' # 본인 깃허브 프로필 사진 주소
+  imageTitle = 'かわいい Illustrator'
+    
+  [[params.socialIcons]]
+    name = 'notion'
+    url = 'https://spectrum-seatbelt-acb.notion.site/Rocopierre-Portfolio-Commission-d858f538baf14680ba03a3bd9383a87e?pvs=143'

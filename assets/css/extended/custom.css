@@ -1,0 +1,33 @@
+/* 이미지 사각형 테두리 */
+.profile_inner img {
+    border-radius: 8px !important;
+}
+
+/* 전체 화면 배경 레이어 - 라이트 모드 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #C5F0F0, #E8D0F0, #FFD0E5, #D0E8FF);
+    z-index: -9999;
+}
+
+/* 다크 모드 배경 */
+[data-theme="dark"] body::before {
+    background: linear-gradient(135deg, #1a1a2a, #2f1a2e, #1a2f2f, #2a1a2a);
+}
+
+/* 모든 배경 투명화 */
+html,
+body,
+.profile_inner,
+.main,
+.list,
+header,
+footer,
+nav {
+    background: transparent !important;
+}
